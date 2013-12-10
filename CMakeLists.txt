@@ -4,13 +4,18 @@ project(adjustment_localization)
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
-find_package(catkin REQUIRED COMPONENTS interactive_markers roscpp visualization_msgs tf icp_server_msgs)
+find_package(catkin REQUIRED COMPONENTS interactive_markers roscpp visualization_msgs tf icp_server_msgs message_generation)
 
 add_message_files(
   DIRECTORY
   msg
   FILES
   AdjustmentParameters.msg
+)
+
+generate_messages(
+  DEPENDENCIES
+  std_msgs
 )
 
 ###################################

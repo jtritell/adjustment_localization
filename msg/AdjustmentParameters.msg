@@ -1,8 +1,7 @@
-bool left_on
-float64 left_x
-float64 left_y
-float64 left_z
-bool right_on
-float64 right_x
-float64 right_y
-float64 right_z
+bool left_foot
+bool left_hand
+bool right_hand
+bool right_foot
+float64 x
+float64 y
+float64 z
